@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
             Vector2 position = (Vector2)transform.position + move * force;
             transform.position = position;
         }
-        while (origin_stat)
+        if(origin_stat)
         {
             if (chr_class == "Assassin")
             {
